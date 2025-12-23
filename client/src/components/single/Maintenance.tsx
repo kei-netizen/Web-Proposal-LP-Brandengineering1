@@ -20,6 +20,7 @@ export function Maintenance() {
                initial={{ opacity: 0, x: -50 }}
                whileInView={{ opacity: 1, x: 0 }}
                viewport={{ once: true }}
+               transition={{ duration: 1.2, ease: "easeOut" }}
                className="text-6xl md:text-8xl font-display font-black text-white mb-8 leading-none"
              >
                MAINTENANCE
@@ -35,6 +36,7 @@ export function Maintenance() {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
             className="w-full lg:w-1/2"
           >
             <div className="bg-primary p-12 relative shadow-2xl shadow-primary/10">
