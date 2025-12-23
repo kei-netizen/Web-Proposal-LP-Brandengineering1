@@ -23,12 +23,12 @@ export function PlanComparison() {
 
         {/* 3 Columns */}
         <div className="grid lg:grid-cols-3 gap-8 mb-32">
-          {/* Starter */}
+          {/* Silver */}
           <div className="p-10 border border-white/10 bg-card hover:border-primary/50 transition-all duration-300 group">
              <div className="text-xs font-mono text-white/50 mb-6 tracking-widest">STARTER</div>
-             <h3 className="text-5xl font-serif italic text-white mb-4">梅</h3>
+             <h3 className="text-5xl font-sans font-black italic text-white mb-4">Silver</h3>
              <p className="text-sm text-white/70 mb-10 h-10">コストを抑えてオリジナルを持ちたい<br/>創業期・急募案件に最適</p>
-             <div className="text-6xl font-display font-bold text-white mb-10 group-hover:text-primary transition-colors">50<span className="text-xl font-sans font-normal ml-2">万円</span></div>
+             <div className="text-6xl font-display font-black text-white mb-10 group-hover:text-primary transition-colors">50<span className="text-xl font-sans font-normal ml-2">万円</span></div>
              
              <ul className="space-y-4 border-t border-white/10 pt-8 text-sm text-muted-foreground">
                <li className="flex items-start"><span className="text-primary mr-2">●</span>ページ数: 必要最小限 (〜5P)</li>
@@ -37,13 +37,13 @@ export function PlanComparison() {
              </ul>
           </div>
 
-          {/* Standard */}
+          {/* Gold */}
           <div className="p-10 border border-primary bg-primary/5 relative transform lg:-translate-y-4 shadow-2xl shadow-primary/10">
              <div className="absolute top-0 right-0 bg-primary text-black text-xs font-bold px-3 py-1">RECOMMENDED</div>
              <div className="text-xs font-mono text-primary mb-6 tracking-widest">STANDARD</div>
-             <h3 className="text-5xl font-serif italic text-white mb-4">竹</h3>
+             <h3 className="text-5xl font-sans font-black italic text-white mb-4 text-primary">Gold</h3>
              <p className="text-sm text-white/70 mb-10 h-10">企業の想いを言葉と写真で伝えたい<br/>信頼獲得・ミスマッチ防止</p>
-             <div className="text-6xl font-display font-bold text-white mb-10 text-primary">100<span className="text-xl font-sans font-normal ml-2 text-white">万円</span></div>
+             <div className="text-6xl font-display font-black text-white mb-10 text-primary">100<span className="text-xl font-sans font-normal ml-2 text-white">万円</span></div>
              
              <ul className="space-y-4 border-t border-primary/30 pt-8 text-sm text-white/80">
                <li className="flex items-start"><span className="text-primary mr-2">●</span>ページ数: 標準構成 (〜10P)</li>
@@ -52,12 +52,12 @@ export function PlanComparison() {
              </ul>
           </div>
 
-          {/* Premium */}
+          {/* Platinum */}
           <div className="p-10 border border-white/10 bg-card hover:border-primary/50 transition-all duration-300 group">
              <div className="text-xs font-mono text-white/50 mb-6 tracking-widest">PREMIUM</div>
-             <h3 className="text-5xl font-serif italic text-white mb-4">松</h3>
+             <h3 className="text-5xl font-sans font-black italic text-white mb-4">Platinum</h3>
              <p className="text-sm text-white/70 mb-10 h-10">圧倒的な世界観でファンを作りたい<br/>リブランディング・優秀層採用</p>
-             <div className="text-6xl font-display font-bold text-white mb-10 group-hover:text-primary transition-colors">180<span className="text-xl font-sans font-normal ml-2">万円〜</span></div>
+             <div className="text-6xl font-display font-black text-white mb-10 group-hover:text-primary transition-colors">180<span className="text-xl font-sans font-normal ml-2">万円〜</span></div>
              
              <ul className="space-y-4 border-t border-white/10 pt-8 text-sm text-muted-foreground">
                <li className="flex items-start"><span className="text-primary mr-2">●</span>ページ数: 充実構成 (15P〜)</li>
@@ -78,9 +78,9 @@ export function PlanComparison() {
               <thead>
                 <tr className="border-b border-white/10 bg-black">
                   <th className="p-6 font-mono text-xs text-muted-foreground font-normal w-1/4">ITEM</th>
-                  <th className="p-6 font-display font-bold text-lg w-1/4">STARTER (梅)</th>
-                  <th className="p-6 font-display font-bold text-lg w-1/4 text-primary bg-primary/5">STANDARD (竹)</th>
-                  <th className="p-6 font-display font-bold text-lg w-1/4">PREMIUM (松)</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4">Silver</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4 text-primary bg-primary/5">Gold</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4">Platinum</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5 text-sm">

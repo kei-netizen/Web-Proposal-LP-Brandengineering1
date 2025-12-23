@@ -69,9 +69,9 @@ export function PageComposition() {
               <thead>
                 <tr className="border-b border-white/10 text-xs text-muted-foreground">
                   <th className="p-4 font-normal">ページ項目</th>
-                  <th className="p-4 text-center w-16">梅</th>
-                  <th className="p-4 text-center w-16 text-primary">竹</th>
-                  <th className="p-4 text-center w-16">松</th>
+                  <th className="p-4 text-center w-16">Silver</th>
+                  <th className="p-4 text-center w-16 text-primary">Gold</th>
+                  <th className="p-4 text-center w-16">Platinum</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
@@ -99,9 +99,9 @@ export function PageComposition() {
               <thead>
                 <tr className="border-b border-white/10 text-xs text-muted-foreground">
                   <th className="p-4 font-normal">ページ項目</th>
-                  <th className="p-4 text-center w-16">梅</th>
-                  <th className="p-4 text-center w-16 text-primary">竹</th>
-                  <th className="p-4 text-center w-16">松</th>
+                  <th className="p-4 text-center w-16">Silver</th>
+                  <th className="p-4 text-center w-16 text-primary">Gold</th>
+                  <th className="p-4 text-center w-16">Platinum</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
