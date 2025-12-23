@@ -9,7 +9,7 @@ export function Concept() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-7xl font-display font-black tracking-tighter mb-8 leading-tight"
+            className="text-3xl md:text-5xl font-display font-black tracking-tighter mb-8 leading-tight"
           >
             Web制作は<br className="md:hidden" />アートではなく<br className="md:hidden" />エンジニアリング。
           </motion.h2>
