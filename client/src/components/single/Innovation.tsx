@@ -5,8 +5,8 @@ export function Innovation() {
   const cards = [
     {
       title: "AI-Driven Design",
-      jpTitle: "AIによるデザイン設計",
-      desc: "画像生成AIを活用し、デザインの試行錯誤を「2週間」から「1日」へ短縮。テンプレートを使わず、御社だけのオリジナルデザインを即座に構築します。",
+      jpTitle: "AIによるデザイン設計とコーディング",
+      desc: "AIを活用し、デザインの試行錯誤を「2週間」から「1日」、コーディングも「1ヶ月」から「3日」に短縮。テンプレートを使わず、御社だけのオリジナルデザインを即座に構築します。",
       icon: <Cpu className="w-10 h-10 text-primary" />
     },
     {
