@@ -1,100 +1,84 @@
 import { SlideContainer } from './SlideLayout';
-import { Check, X } from 'lucide-react';
 
 export function DetailedComparisonSlide() {
   return (
-    <SlideContainer>
-      <div className="h-full flex flex-col">
-        <h2 className="text-3xl font-display font-bold mb-8">機能・制作範囲の詳細比較</h2>
-        
-        <div className="flex-grow bg-card/30 rounded-xl border border-white/10 overflow-hidden text-sm">
-           <div className="grid grid-cols-4 bg-white/5 border-b border-white/10 font-bold text-base">
-             <div className="p-6 text-muted-foreground">項目</div>
-             <div className="p-6 text-blue-400 border-l border-white/5">梅 (Starter)</div>
-             <div className="p-6 text-emerald-400 border-l border-white/5">竹 (Standard)</div>
-             <div className="p-6 text-purple-400 border-l border-white/5">松 (Premium)</div>
-           </div>
+    <SlideContainer className="bg-white text-black">
+      <div className="w-full h-full flex">
+         {/* Sidebar Header */}
+         <div className="w-1/6 bg-black text-white p-8 flex flex-col justify-center border-r border-white/10">
+            <h2 className="text-4xl font-display font-bold vertical-text text-vertical tracking-widest h-full flex items-center">
+              SPECIFICATION
+            </h2>
+         </div>
 
-           {/* Design */}
-           <div className="grid grid-cols-4 border-b border-white/5 items-stretch">
-             <div className="p-6 font-medium text-muted-foreground bg-white/2">デザイン</div>
-             <div className="p-6 border-l border-white/5">
-               <strong className="block mb-2 text-white">AI活用オリジナル</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 画像生成AIでベースを作成しデザイナーが調整。低コストで独自性を確保。
-               </span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-emerald-900/5">
-               <strong className="block mb-2 text-white">デザイナー制作</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 意図的な視線誘導と信頼感を醸成するプロのデザイン設計。
-               </span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-purple-900/5">
-               <strong className="block mb-2 text-white">フルスクラッチ</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 アートディレクションに基づく独自の演出・アニメーション・動画。
-               </span>
-             </div>
-           </div>
+         {/* Content Area */}
+         <div className="w-5/6 p-12 flex flex-col justify-center">
+           <div className="grid grid-cols-4 gap-0 border border-black/10 text-sm">
+              {/* Header Row */}
+              <div className="p-4 font-bold bg-black/5 border-b border-black/10">ITEM</div>
+              <div className="p-4 font-bold bg-black/5 border-b border-black/10 border-l">STARTER (梅)</div>
+              <div className="p-4 font-bold bg-primary text-white border-b border-black/10 border-l border-primary">STANDARD (竹)</div>
+              <div className="p-4 font-bold bg-black text-white border-b border-black/10 border-l border-black">PREMIUM (松)</div>
 
-           {/* Content */}
-           <div className="grid grid-cols-4 border-b border-white/5 items-stretch">
-             <div className="p-6 font-medium text-muted-foreground bg-white/2">ライティング</div>
-             <div className="p-6 border-l border-white/5">
-               <span className="text-muted-foreground">ご支給</span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-emerald-900/5">
-               <strong className="block mb-2 text-white">新規＋リライト</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 キャッチコピー等は新規作成。事業情報はWeb向けに整文。
-               </span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-purple-900/5">
-               <strong className="block mb-2 text-white">取材・完全代行</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 プロの編集者がインタビューを行いストーリーを構築。
-               </span>
-             </div>
-           </div>
+              {/* Design Row */}
+              <div className="p-4 font-bold border-b border-black/10 flex items-center bg-black/5">デザイン</div>
+              <div className="p-4 border-b border-black/10 border-l">
+                <span className="font-bold block text-lg mb-1">AI Original</span>
+                <span className="text-xs text-gray-500">AIベース生成 + 調整</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-primary/5">
+                <span className="font-bold block text-lg mb-1 text-primary">Professional</span>
+                <span className="text-xs text-gray-600">意図的設計・信頼感</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-black/5">
+                <span className="font-bold block text-lg mb-1">Art Direction</span>
+                <span className="text-xs text-gray-600">独自演出・動画・体験</span>
+              </div>
 
-           {/* Photo */}
-           <div className="grid grid-cols-4 border-b border-white/5 items-stretch">
-             <div className="p-6 font-medium text-muted-foreground bg-white/2">写真素材</div>
-             <div className="p-6 border-l border-white/5">
-               <span className="text-muted-foreground">ご支給</span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-emerald-900/5">
-               <strong className="block mb-2 text-white">プロ撮影 (1日)</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 社員・オフィス・外観等を高品質に撮影。
-               </span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-purple-900/5">
-               <strong className="block mb-2 text-white">撮影 ＋ 動画</strong>
-               <span className="text-muted-foreground text-xs leading-relaxed">
-                 スチール撮影に加え、ブランドムービーの演出・制作も実施。
-               </span>
-             </div>
-           </div>
+              {/* Content Row */}
+              <div className="p-4 font-bold border-b border-black/10 flex items-center bg-black/5">ライティング</div>
+              <div className="p-4 border-b border-black/10 border-l">
+                 <span className="text-gray-400">ご支給</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-primary/5">
+                 <span className="font-bold block text-lg mb-1 text-primary">Rewrite</span>
+                 <span className="text-xs text-gray-600">新規作成 + 整文</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-black/5">
+                 <span className="font-bold block text-lg mb-1">Interview</span>
+                 <span className="text-xs text-gray-600">取材・編集・構成代行</span>
+              </div>
 
-           {/* Effort */}
-           <div className="grid grid-cols-4 items-stretch">
-             <div className="p-6 font-medium text-muted-foreground bg-white/2">お客様負担</div>
-             <div className="p-6 border-l border-white/5">
-               <span className="inline-block px-2 py-1 bg-white/10 rounded text-xs mb-2">高</span><br/>
-               <span className="text-xs text-muted-foreground">原稿・素材の準備が必要</span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-emerald-900/5">
-               <span className="inline-block px-2 py-1 bg-white/10 rounded text-xs mb-2">中</span><br/>
-               <span className="text-xs text-muted-foreground">取材対応・事実確認のみ</span>
-             </div>
-             <div className="p-6 border-l border-white/5 bg-purple-900/5">
-               <span className="inline-block px-2 py-1 bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 rounded text-xs mb-2">低</span><br/>
-               <span className="text-xs text-muted-foreground">企画から丸投げ可能</span>
-             </div>
+              {/* Photo Row */}
+              <div className="p-4 font-bold border-b border-black/10 flex items-center bg-black/5">撮影</div>
+              <div className="p-4 border-b border-black/10 border-l">
+                 <span className="text-gray-400">ご支給</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-primary/5">
+                 <span className="font-bold block text-lg mb-1 text-primary">Pro Photo</span>
+                 <span className="text-xs text-gray-600">1日撮影 (社員/外観)</span>
+              </div>
+              <div className="p-4 border-b border-black/10 border-l bg-black/5">
+                 <span className="font-bold block text-lg mb-1">Photo + Video</span>
+                 <span className="text-xs text-gray-600">スチール + ムービー</span>
+              </div>
+
+              {/* Effort Row */}
+              <div className="p-4 font-bold flex items-center bg-black/5">お客様負担</div>
+              <div className="p-4 border-l">
+                 <span className="bg-black/10 px-2 py-1 text-xs font-bold rounded">高</span>
+                 <span className="ml-2 text-xs text-gray-500">原稿準備要</span>
+              </div>
+              <div className="p-4 border-l bg-primary/5">
+                 <span className="bg-primary/20 text-primary px-2 py-1 text-xs font-bold rounded">中</span>
+                 <span className="ml-2 text-xs text-gray-600">取材のみ</span>
+              </div>
+              <div className="p-4 border-l bg-black/5">
+                 <span className="bg-black text-white px-2 py-1 text-xs font-bold rounded">低</span>
+                 <span className="ml-2 text-xs text-gray-600">丸投げ可</span>
+              </div>
            </div>
-        </div>
+         </div>
       </div>
     </SlideContainer>
   );

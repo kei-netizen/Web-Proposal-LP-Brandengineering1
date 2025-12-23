@@ -1,41 +1,59 @@
 import { SlideContainer } from './SlideLayout';
 import { motion } from 'framer-motion';
-import heroBg from '@assets/generated_images/digital_architectural_wireframe_background_for_hero_section.png';
+import heroBg from '@assets/generated_images/bold_red_and_black_abstract_geometric_background.png';
 
 export function CoverSlide() {
   return (
-    <SlideContainer className="justify-center items-start">
-      <div className="absolute inset-0 z-0">
-        <img 
-          src={heroBg} 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-30 mix-blend-screen" 
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-transparent" />
+    <SlideContainer className="flex-row">
+      {/* Left Red Panel */}
+      <div className="w-1/3 bg-primary h-full relative flex flex-col justify-center px-12 z-20">
+         <motion.div 
+           initial={{ opacity: 0, x: -50 }}
+           animate={{ opacity: 1, x: 0 }}
+           transition={{ delay: 0.3 }}
+           className="space-y-2"
+         >
+           <div className="h-1 w-20 bg-black mb-6" />
+           <p className="font-mono text-sm text-black/70 font-bold uppercase tracking-widest">Proposal</p>
+           <h2 className="text-5xl font-display font-bold text-black leading-none">
+             WEB<br/>PRODUCTION<br/>PLANS
+           </h2>
+         </motion.div>
+         
+         <div className="absolute bottom-12 left-12">
+            <p className="font-bold text-black text-lg">2025</p>
+         </div>
       </div>
 
-      <div className="relative z-10 max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-            <span className="text-xs font-mono tracking-widest uppercase text-white/70">Web Production Service Proposal</span>
-          </div>
-
-          <h1 className="font-display text-6xl md:text-8xl font-bold tracking-tight leading-[0.9] mb-12">
-            BEYOND <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/50">DESIGN</span> INTO <br />
-            EXPERIENCE
-          </h1>
-
-          <div className="border-l-2 border-white/20 pl-6">
-            <p className="text-xl md:text-2xl text-white font-medium mb-2">Web制作プランのご提案</p>
-            <p className="text-muted-foreground">ご予算と目的に応じた最適なクリエイティブソリューション</p>
-          </div>
-        </motion.div>
+      {/* Right Image Panel */}
+      <div className="w-2/3 h-full relative bg-black">
+        <img 
+          src={heroBg} 
+          alt="Abstract Red Black" 
+          className="w-full h-full object-cover opacity-80" 
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent to-black/50" />
+        
+        <div className="absolute top-1/2 right-12 -translate-y-1/2 text-right">
+          <motion.h1 
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="text-8xl md:text-9xl font-display font-bold text-white tracking-tighter leading-none"
+          >
+            BEYOND<br/>
+            <span className="text-primary">DESIGN</span>
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="text-white/60 mt-6 max-w-md ml-auto font-sans leading-relaxed"
+          >
+            ご予算と目的に応じた最適なクリエイティブソリューション。<br/>
+            AI活用から完全ブランディングまで。
+          </motion.p>
+        </div>
       </div>
     </SlideContainer>
   );

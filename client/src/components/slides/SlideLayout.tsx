@@ -4,42 +4,44 @@ import { cn } from '@/lib/utils';
 
 interface SlideProps {
   children: ReactNode;
-  isActive?: boolean;
   className?: string;
+  theme?: 'dark' | 'light' | 'red';
 }
 
-export function SlideContainer({ children, className }: SlideProps) {
+export function SlideContainer({ children, className, theme = 'dark' }: SlideProps) {
+  const bgClass = theme === 'red' ? 'bg-primary' : theme === 'light' ? 'bg-white text-black' : 'bg-background text-white';
+
   return (
-    <div className={cn("w-full h-full flex flex-col p-12 md:p-20 relative overflow-hidden bg-background", className)}>
-      <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
-      {children}
-      
-      {/* Slide Footer / Numbering would go here if needed globally */}
-      <div className="absolute bottom-6 left-12 right-12 flex justify-between items-end pointer-events-none text-xs text-muted-foreground font-mono">
-         <span>PROTOTYPE.WEB</span>
-         <span className="slide-number-target"></span>
+    <div className={cn("w-full h-full relative overflow-hidden flex", bgClass, className)}>
+      {/* Global Brand Mark */}
+      <div className="absolute top-8 left-8 z-50 mix-blend-difference text-white">
+        <span className="font-display font-bold text-xl tracking-tighter">PROTOTYPE.WEB</span>
       </div>
+      
+      {/* Slide Number */}
+      <div className="absolute bottom-8 right-8 z-50 mix-blend-difference text-white font-mono text-sm">
+        <span className="slide-number-target">01</span>
+      </div>
+
+      {children}
     </div>
   );
 }
 
 export const slideVariants = {
   enter: (direction: number) => ({
-    x: direction > 0 ? 1000 : -1000,
-    opacity: 0,
-    scale: 0.95,
-    zIndex: 0
+    y: direction > 0 ? '100%' : '-100%',
+    opacity: 1,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
   }),
   center: {
-    zIndex: 1,
-    x: 0,
+    y: 0,
     opacity: 1,
-    scale: 1
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
   },
   exit: (direction: number) => ({
-    zIndex: 0,
-    x: direction < 0 ? 1000 : -1000,
-    opacity: 0,
-    scale: 0.95
+    y: direction < 0 ? '100%' : '-100%',
+    opacity: 1, // Keep opacity 1 for solid slide effect
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] }
   })
 };
