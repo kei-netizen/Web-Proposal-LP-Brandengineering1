@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [0, 500], [0, 150]);
+  const y = useTransform(scrollY, [0, 500], [0, 200]);
   const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   return (
@@ -60,7 +60,7 @@ export function Hero() {
       <div className="w-full lg:w-[60%] relative bg-black h-[50vh] lg:h-screen overflow-hidden">
         <motion.div 
           style={{ y, scale: 1.1 }}
-          className="absolute w-full h-[150%] -top-[25%] left-0"
+          className="absolute inset-0"
         >
           <img 
             src={heroBg} 
