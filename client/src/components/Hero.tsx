@@ -34,10 +34,11 @@ export function Hero() {
               EXPERIENCE
             </h1>
 
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12">
-              We offer three tailored plans to match your budget and purpose. 
-              From AI-hybrid rapid deployment to full-scale artistic branding. 
-              All plans include <span className="text-white font-semibold">Original Design</span>.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12 font-sans">
+              ご予算と目的に応じて、3つのプランをご用意しました。<br />
+              全プラン共通で<span className="text-white font-semibold">「オリジナルデザイン」</span>を提供します。<br />
+              AIを活用したスピード構築から、完全オーダーメイドのブランディングまで。<br />
+              貴社のフェーズに最適なプランをお選びください。
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">

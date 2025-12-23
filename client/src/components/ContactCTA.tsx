@@ -16,12 +16,12 @@ export function ContactCTA() {
             READY TO BUILD?
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-            Let's create a digital presence that reflects your true value.
-            Consultations are free.
+            貴社の真の価値を反映したデジタルプレゼンスを構築しませんか。<br/>
+            ご相談は無料です。お気軽にお問い合わせください。
           </p>
           
           <button className="px-12 py-6 bg-white text-black font-bold text-lg tracking-wide hover:bg-white/90 transition-all rounded-sm">
-            START YOUR PROJECT
+            プロジェクトを開始する
           </button>
 
           <p className="mt-8 text-sm text-muted-foreground font-mono">

@@ -8,39 +8,40 @@ export function ContentSection() {
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-6">CONTENT STRATEGY</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Design catches the eye, but content captures the heart. 
-            We offer different levels of writing support based on your internal resources.
+            デザインは目を惹き、コンテンツは心を掴みます。<br/>
+            社内リソースの状況に合わせて、3つのライティング支援をご用意しました。
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           <div className="p-8 border border-white/5 bg-background/50 rounded-xl hover:border-white/20 transition-colors">
             <FileText className="w-8 h-8 text-blue-400 mb-6" />
-            <h3 className="text-xl font-bold mb-2">Client Provided</h3>
+            <h3 className="text-xl font-bold mb-2">完全ご支給</h3>
             <p className="text-xs font-mono text-muted-foreground mb-4 uppercase">Starter Plan</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Best for companies with existing brochures or a strong marketing team. 
-              We take your text files and implement them exactly as provided.
+              すでにパンフレットなどの原稿がある場合や、社内に書ける人がいる場合に最適です。
+              頂いた原稿をそのままWebサイトに反映します。
             </p>
           </div>
 
           <div className="p-8 border border-white/5 bg-background/50 rounded-xl hover:border-white/20 transition-colors">
             <PenLine className="w-8 h-8 text-emerald-400 mb-6" />
-            <h3 className="text-xl font-bold mb-2">Refinement & New Copy</h3>
+            <h3 className="text-xl font-bold mb-2">新規作成 & リライト</h3>
             <p className="text-xs font-mono text-muted-foreground mb-4 uppercase">Standard Plan</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              We write the key messages (Catchphrase, CEO Message, USP) from scratch to ensure emotional impact. 
-              Fact-based pages (Services, History) are rewritten from your drafts for web readability.
+              キャッチコピーや代表挨拶など「共感」を生む部分はプロが新規執筆。
+              沿革や募集要項などの「事実情報」は、頂いた原稿をWeb向けに読みやすくリライトします。
             </p>
           </div>
 
           <div className="p-8 border border-white/5 bg-background/50 rounded-xl hover:border-white/20 transition-colors">
             <Mic className="w-8 h-8 text-purple-400 mb-6" />
-            <h3 className="text-xl font-bold mb-2">Full Interview & Story</h3>
+            <h3 className="text-xl font-bold mb-2">取材・インタビュー</h3>
             <p className="text-xs font-mono text-muted-foreground mb-4 uppercase">Premium Plan</p>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              "I can't put it into words." No problem. Our professional editor interviews you to extract your passion and philosophy. 
-              We turn your unspoken thoughts into a compelling narrative. Zero writing effort required from you.
+              「うまく言葉にできない想い」もお任せください。
+              プロのライターとディレクターが訪問し、1からインタビュー。
+              魅力的なストーリーに仕上げます。原稿作成の手間はほぼゼロです。
             </p>
           </div>
         </div>

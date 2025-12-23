@@ -23,7 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <a href="#process" className="hover:text-white transition-colors">PROCESS</a>
             <a href="#content" className="hover:text-white transition-colors">CONTENT</a>
             <a href="#contact" className="text-white border border-white/20 px-4 py-2 hover:bg-white hover:text-black transition-all">
-              CONTACT
+              お問い合わせ
             </a>
           </nav>
         </div>
@@ -39,29 +39,29 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div className="space-y-4">
               <h3 className="font-display font-bold text-2xl">PROTOTYPE.WEB</h3>
               <p className="text-sm text-muted-foreground">
-                Crafting digital experiences that transcend the ordinary.
+                日常を超えるデジタル体験を。
               </p>
             </div>
             <div className="space-y-4">
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/50">Plans</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Starter (Plum)</li>
-                <li>Standard (Bamboo)</li>
-                <li>Premium (Pine)</li>
+                <li>Starter (梅)</li>
+                <li>Standard (竹)</li>
+                <li>Premium (松)</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/50">Legal</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li>Privacy Policy</li>
-                <li>Terms of Service</li>
+                <li>プライバシーポリシー</li>
+                <li>特定商取引法に基づく表記</li>
               </ul>
             </div>
             <div className="space-y-4">
               <h4 className="font-mono text-xs uppercase tracking-widest text-white/50">Connect</h4>
               <p className="text-sm text-muted-foreground">
                 info@prototype.web<br />
-                +81 03-1234-5678
+                03-1234-5678
               </p>
             </div>
           </div>
