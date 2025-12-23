@@ -3,28 +3,28 @@ import { Check, Minus } from 'lucide-react';
 
 const companyPages = [
   { name: 'TOPページ', starter: true, standard: true, premium: true },
-  { name: '会社案内', starter: true, standard: true, premium: true },
   { name: '事業紹介', starter: true, standard: true, premium: true },
+  { name: '導入実績・事例', starter: false, standard: true, premium: true },
+  { name: '私たちの強み', starter: false, standard: true, premium: true },
+  { name: '会社案内', starter: true, standard: true, premium: true },
+  { name: '代表メッセージ', starter: false, standard: true, premium: true },
+  { name: '採用情報', starter: false, standard: true, premium: true },
   { name: 'お問い合わせ', starter: true, standard: true, premium: true },
   { name: 'お知らせ', starter: true, standard: true, premium: true },
-  { name: '代表メッセージ', starter: false, standard: true, premium: true },
-  { name: '私たちの強み', starter: false, standard: true, premium: true },
-  { name: '導入実績・事例', starter: false, standard: true, premium: true },
-  { name: '採用情報', starter: false, standard: true, premium: true },
   { name: 'プライバシーポリシー', starter: false, standard: true, premium: true },
 ];
 
 const recruitPages = [
   { name: 'TOPページ', starter: true, standard: true, premium: true },
   { name: '募集要項一覧', starter: true, standard: true, premium: true },
-  { name: 'エントリーフォーム', starter: true, standard: true, premium: true },
   { name: '会社・事業紹介', starter: true, standard: true, premium: true },
-  { name: '代表メッセージ', starter: false, standard: true, premium: true },
   { name: '社員インタビュー', starter: false, standard: true, premium: true },
   { name: '働く環境・制度', starter: false, standard: true, premium: true },
-  { name: '数字で見る◯◯', starter: false, standard: false, premium: true },
-  { name: 'クロストーク', starter: false, standard: false, premium: true },
   { name: 'キャリアパス', starter: false, standard: false, premium: true },
+  { name: '数字で見る◯◯', starter: false, standard: false, premium: true },
+  { name: '代表メッセージ', starter: false, standard: true, premium: true },
+  { name: 'クロストーク', starter: false, standard: false, premium: true },
+  { name: 'エントリーフォーム', starter: true, standard: true, premium: true },
 ];
 
 function StatusIcon({ status }: { status: boolean | string }) {
