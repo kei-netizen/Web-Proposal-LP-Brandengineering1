@@ -2,138 +2,107 @@ import { motion } from 'framer-motion';
 
 export function ProcessAndContent() {
   return (
-    <section className="py-32 bg-background relative border-b border-white/10">
+    <section className="bg-background relative py-32 border-b border-white/10 overflow-hidden">
       <div className="container mx-auto px-6">
         
-        {/* Design Process */}
-        <div className="mb-32">
-          <h2 className="text-5xl font-display font-bold text-white mb-16 tracking-tight">
-            DESIGN PROCESS <span className="text-primary stroke-text text-transparent">DIFFERENCE</span>
-          </h2>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-             {/* Silver */}
-             <div className="relative group">
-                <div className="aspect-video bg-white/5 border border-white/10 mb-8 overflow-hidden relative">
-                   <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-transparent opacity-50" />
-                   <span className="absolute bottom-4 left-4 text-6xl font-display font-bold text-white/10">AI</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white flex items-center gap-3">
-                  <span className="text-sm px-2 py-1 border border-white/20 rounded-full font-serif italic text-muted-foreground">Silver</span>
-                  AIハイブリッド制作
-                </h3>
-                <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
-                  <p>
-                    <strong className="text-white block mb-1">制作手法:</strong>
-                    最新の画像生成AIを活用してキービジュアル（KV）のベースを作成し、デザイナーがWebサイト用に調整・配置します。
-                  </p>
-                  <p>
-                    <strong className="text-white block mb-1">メリット:</strong>
-                    ゼロから描く工数を削減することで、<strong className="text-white bg-white/10 px-1">低コストながら「他社と被らないオリジナルデザイン」</strong>を実現します。
-                  </p>
-                  <p className="text-xs text-white/40">
-                    注意点: 細かい描写の指定修正は難しい場合があります（AIの特性上）。
-                  </p>
-                </div>
+        {/* Dynamic Header */}
+        <div className="flex flex-col md:flex-row mb-32 relative">
+           <div className="w-full md:w-1/2">
+             <h2 className="text-6xl md:text-8xl font-display font-black text-white leading-none">
+               PROCESS<br/>
+               <span className="text-primary">&</span> METHOD
+             </h2>
+           </div>
+           <div className="w-full md:w-1/2 flex items-end justify-end">
+             <div className="max-w-md text-right">
+                <p className="text-muted-foreground text-lg">
+                  クリエイティブの質を決めるのは「プロセス」です。<br/>
+                  AIのスピードか、人の情緒か、アートの衝撃か。
+                </p>
              </div>
-
-             {/* Gold */}
-             <div className="relative group">
-                <div className="aspect-video bg-white/5 border border-primary/50 mb-8 overflow-hidden relative shadow-2xl shadow-primary/10">
-                   <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-50" />
-                   <span className="absolute bottom-4 left-4 text-6xl font-display font-bold text-primary/20">PRO</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-3">
-                  <span className="text-sm px-2 py-1 border border-primary/20 rounded-full font-serif italic text-primary">Gold</span>
-                  プロフェッショナル制作
-                </h3>
-                <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
-                  <p>
-                    <strong className="text-white block mb-1">制作手法:</strong>
-                    経験豊富なデザイナーが、御社のターゲット層や伝えたいイメージをヒアリングし、意図を持ってKVと下層MVを設計します。
-                  </p>
-                  <p>
-                    <strong className="text-white block mb-1">メリット:</strong>
-                    「信頼感」「温かみ」「誠実さ」など、微妙なニュアンスをデザインで正確に表現できます。
-                  </p>
-                </div>
-             </div>
-
-             {/* Platinum */}
-             <div className="relative group">
-                <div className="aspect-video bg-white/5 border border-white/10 mb-8 overflow-hidden relative">
-                   <div className="absolute inset-0 bg-gradient-to-tr from-purple-900/40 to-transparent opacity-50" />
-                   <span className="absolute bottom-4 left-4 text-6xl font-display font-bold text-white/10">ART</span>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-white flex items-center gap-3">
-                  <span className="text-sm px-2 py-1 border border-white/20 rounded-full font-serif italic text-muted-foreground">Platinum</span>
-                  ブランディング制作
-                </h3>
-                <div className="space-y-4 text-sm leading-relaxed text-muted-foreground">
-                  <p>
-                    <strong className="text-white block mb-1">制作手法:</strong>
-                    アートディレクターが参画し、動画、アニメーション、インタラクションを含めたトータルブランディングを行います。
-                  </p>
-                  <p>
-                    <strong className="text-white block mb-1">メリット:</strong>
-                    訪問者の感情を動かす<strong className="text-white bg-white/10 px-1">「体験」としてのWebサイト</strong>を提供します。
-                  </p>
-                </div>
-             </div>
-          </div>
+           </div>
+           <div className="absolute bottom-0 left-0 w-full h-[1px] bg-white/10 mt-12" />
         </div>
 
-        {/* Content Strategy */}
-        <div>
-          <h2 className="text-5xl font-display font-bold text-white mb-16 tracking-tight">
-            CONTENT STRATEGY <span className="text-primary stroke-text text-transparent">DIFFERENCE</span>
-          </h2>
+        {/* Diagonal Layout for Process */}
+        <div className="grid md:grid-cols-3 gap-0 mb-32 border border-white/10">
+           {/* Silver */}
+           <div className="group relative border-r border-white/10 p-12 hover:bg-white/5 transition-all duration-500">
+              <span className="text-9xl font-display font-black text-white/5 absolute top-0 left-0 leading-none group-hover:text-primary/10 transition-colors">01</span>
+              <div className="relative z-10 pt-20">
+                 <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-primary transition-colors">AI HYBRID</h3>
+                 <p className="text-sm text-muted-foreground leading-7">
+                   <strong className="text-white block mb-2">SILVER PLAN</strong>
+                   最新の画像生成AIでベースを作成し、デザイナーが調整。
+                   ゼロイチの工数を削減し、低コストで独自性を確保します。
+                 </p>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+           </div>
 
-          <div className="grid md:grid-cols-3 divide-x divide-white/10 border-t border-b border-white/10">
-             {/* Silver */}
-             <div className="p-8 hover:bg-white/2 transition-colors">
-                <div className="text-xl font-bold mb-2 text-white">Silverプラン</div>
-                <div className="text-xs text-white/40 mb-6 font-mono">CLIENT PROVIDED</div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  <strong className="text-white block mb-2">原稿:</strong>
-                  基本的にお客様からの完全支給となります。
-                </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  <strong className="text-white block mb-2">適した用途:</strong>
-                  すでにパンフレットなどの原稿がある場合や、社内に書ける人がいる場合。
-                </p>
-             </div>
+           {/* Gold */}
+           <div className="group relative border-r border-white/10 p-12 bg-white/5">
+              <span className="text-9xl font-display font-black text-white/5 absolute top-0 left-0 leading-none group-hover:text-primary/10 transition-colors">02</span>
+              <div className="relative z-10 pt-20">
+                 <h3 className="text-3xl font-bold text-primary mb-4">PROFESSIONAL</h3>
+                 <p className="text-sm text-muted-foreground leading-7">
+                   <strong className="text-white block mb-2">GOLD PLAN</strong>
+                   経験豊富なデザイナーによる意図的な設計。
+                   信頼感や温かみといった微妙なニュアンスをコントロールします。
+                 </p>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-100 transition-transform duration-500" />
+           </div>
 
-             {/* Gold */}
-             <div className="p-8 bg-primary/5 hover:bg-primary/10 transition-colors relative">
-                <div className="absolute top-0 right-0 p-2 text-[10px] font-bold text-primary border border-primary/20 bg-black">RECOMMENDED</div>
-                <div className="text-xl font-bold mb-2 text-primary">Goldプラン</div>
-                <div className="text-xs text-primary/60 mb-6 font-mono">REWRITE & CREATE</div>
-                <div className="space-y-6">
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    <strong className="text-white block mb-2">情緒的コンテンツ（新規作成）:</strong>
-                    キャッチコピー、代表挨拶、企業の強みなど、「共感」や「魅力」を伝える部分はプロのライターが新規で執筆します。
-                  </p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    <strong className="text-white block mb-2">機能的コンテンツ（リライト）:</strong>
-                    事業内容の詳細、沿革、募集要項などの「事実情報」は、頂いた原稿をベースにWeb向けに読みやすくリライト（整文）します。
-                  </p>
-                </div>
-             </div>
+           {/* Platinum */}
+           <div className="group relative p-12 hover:bg-white/5 transition-all duration-500">
+              <span className="text-9xl font-display font-black text-white/5 absolute top-0 left-0 leading-none group-hover:text-primary/10 transition-colors">03</span>
+              <div className="relative z-10 pt-20">
+                 <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-primary transition-colors">ART DIRECTION</h3>
+                 <p className="text-sm text-muted-foreground leading-7">
+                   <strong className="text-white block mb-2">PLATINUM PLAN</strong>
+                   静止画だけでなく、動画・アニメーションを含めたトータル体験。
+                   圧倒的な世界観でファンを作ります。
+                 </p>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+           </div>
+        </div>
 
-             {/* Platinum */}
-             <div className="p-8 hover:bg-white/2 transition-colors">
-                <div className="text-xl font-bold mb-2 text-white">Platinumプラン</div>
-                <div className="text-xs text-white/40 mb-6 font-mono">INTERVIEW & STORY</div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  <strong className="text-white block mb-2">取材・インタビュー:</strong>
-                  プロのライターとディレクターが訪問し、1からインタビューを行います。
+        {/* Content Strategy - Horizontal Scroll Feel */}
+        <div className="bg-primary text-black p-12 md:p-20 relative overflow-hidden">
+           <div className="absolute top-0 right-0 w-1/3 h-full bg-black/5 skew-x-[-20deg]" />
+           
+           <h2 className="text-5xl md:text-6xl font-display font-black mb-12 relative z-10">
+             CONTENT STRATEGY
+           </h2>
+           
+           <div className="grid md:grid-cols-3 gap-12 relative z-10">
+              <div>
+                <h4 className="font-bold text-2xl mb-4 border-b-2 border-black pb-2">Silver</h4>
+                <p className="font-bold text-sm mb-2 opacity-60">CLIENT PROVIDED</p>
+                <p className="text-sm leading-relaxed font-medium">
+                  お客様からの完全支給。<br/>
+                  コスト重視で、社内にライティングリソースがある場合に最適です。
                 </p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  「うまく言葉にできない想い」を引き出し、魅力的なストーリーに仕上げます。原稿作成の手間はほぼゼロです。
+              </div>
+              <div>
+                <h4 className="font-bold text-2xl mb-4 border-b-2 border-black pb-2">Gold</h4>
+                <p className="font-bold text-sm mb-2 opacity-60">REWRITE & CREATE</p>
+                <p className="text-sm leading-relaxed font-medium">
+                  キャッチコピー等は新規作成。<br/>
+                  事実情報はWeb向けに読みやすくリライトします。
                 </p>
-             </div>
-          </div>
+              </div>
+              <div>
+                <h4 className="font-bold text-2xl mb-4 border-b-2 border-black pb-2">Platinum</h4>
+                <p className="font-bold text-sm mb-2 opacity-60">INTERVIEW & STORY</p>
+                <p className="text-sm leading-relaxed font-medium">
+                  プロによる取材・インタビュー。<br/>
+                  想いを引き出し、魅力的なストーリーを構築します。
+                </p>
+              </div>
+           </div>
         </div>
 
       </div>

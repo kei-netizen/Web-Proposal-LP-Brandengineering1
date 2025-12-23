@@ -2,42 +2,43 @@
 @import "tw-animate-css";
 
 @theme inline {
-  --radius-sm: 0rem; /* Square corners for bold look */
+  --radius-sm: 0rem;
   --radius-md: 0rem;
   --radius-lg: 0rem;
   
-  /* Redz Theme Palette - Bold/High Contrast */
-  --color-brand-red: hsl(358 85% 52%);     /* Vibrant Red */
-  --color-brand-black: hsl(0 0% 5%);       /* Deep Black */
-  --color-brand-white: hsl(0 0% 95%);      /* Off White */
+  /* Yellow Theme Palette - High Voltage */
+  --color-brand-yellow: hsl(54 100% 50%);  /* Electric Yellow */
+  --color-brand-black: hsl(0 0% 8%);       /* Soft Black */
+  --color-brand-grey: hsl(0 0% 20%);       /* Dark Grey */
+  --color-brand-white: hsl(0 0% 95%);
   
   --color-background: var(--color-brand-black);
   --color-foreground: var(--color-brand-white);
   
-  --color-card: hsl(0 0% 10%);
+  --color-card: hsl(0 0% 12%);
   --color-card-foreground: var(--color-brand-white);
   
   --color-popover: var(--color-brand-black);
   --color-popover-foreground: var(--color-brand-white);
   
-  --color-primary: var(--color-brand-red);
-  --color-primary-foreground: var(--color-brand-white);
+  --color-primary: var(--color-brand-yellow);
+  --color-primary-foreground: black;
   
-  --color-secondary: hsl(0 0% 20%);
+  --color-secondary: var(--color-brand-grey);
   --color-secondary-foreground: var(--color-brand-white);
   
-  --color-muted: hsl(0 0% 20%);
+  --color-muted: hsl(0 0% 15%);
   --color-muted-foreground: hsl(0 0% 60%);
   
-  --color-accent: var(--color-brand-red);
-  --color-accent-foreground: var(--color-brand-white);
+  --color-accent: var(--color-brand-yellow);
+  --color-accent-foreground: black;
   
   --color-destructive: hsl(0 62.8% 30.6%);
   --color-destructive-foreground: var(--color-brand-white);
   
-  --color-border: hsl(0 0% 20%);
-  --color-input: hsl(0 0% 20%);
-  --color-ring: var(--color-brand-red);
+  --color-border: hsl(0 0% 15%);
+  --color-input: hsl(0 0% 15%);
+  --color-ring: var(--color-brand-yellow);
   
   --font-sans: 'Inter', sans-serif;
   --font-display: 'Inter', sans-serif;
@@ -49,7 +50,7 @@
     @apply border-border;
   }
   body {
-    @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-white;
+    @apply font-sans antialiased bg-background text-foreground selection:bg-primary selection:text-black;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-black tracking-tighter uppercase;
@@ -66,5 +67,15 @@
     background-size: 40px 40px;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
                       linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  }
+  
+  .stroke-text {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+  }
+  
+  .stroke-text-black {
+    -webkit-text-stroke: 1px black;
+    color: transparent;
   }
 }
