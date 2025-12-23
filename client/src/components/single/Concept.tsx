@@ -11,7 +11,7 @@ export function Concept() {
             viewport={{ once: true }}
             className="text-5xl md:text-7xl font-display font-black tracking-tighter mb-8 leading-tight"
           >
-            技術を、<br className="md:hidden" />ブランドへ。
+            理性を組み、<br className="md:hidden" />熱狂を創る。
           </motion.h2>
           
           <motion.p 
