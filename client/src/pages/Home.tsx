@@ -1,5 +1,7 @@
 import { ReactNode } from 'react';
 import { Hero } from "@/components/single/Hero";
+import { Concept } from "@/components/single/Concept";
+import { Innovation } from "@/components/single/Innovation";
 import { PlanComparison } from "@/components/single/PlanComparison";
 import { PageComposition } from "@/components/single/PageComposition";
 import { ProcessAndContent } from "@/components/single/ProcessAndContent";
@@ -9,6 +11,8 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-white selection:bg-primary selection:text-white">
       <Hero />
+      <Concept />
+      <Innovation />
       <PlanComparison />
       <PageComposition />
       <ProcessAndContent />
