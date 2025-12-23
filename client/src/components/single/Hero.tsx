@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
-import heroBg from '@assets/generated_images/abstract_yellow_and_black_geometric_3d_shapes.png';
+import heroBg from '@assets/generated_images/abstract_3d_industrial_yellow_bolt_on_black_background.png';
 import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
@@ -64,7 +64,7 @@ export function Hero() {
         >
           <img 
             src={heroBg} 
-            alt="Abstract Yellow Black" 
+            alt="Abstract Yellow Industrial Bolt" 
             className="w-full h-full object-cover opacity-80" 
           />
         </motion.div>
