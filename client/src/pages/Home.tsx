@@ -5,6 +5,8 @@ import { Innovation } from "@/components/single/Innovation";
 import { PlanComparison } from "@/components/single/PlanComparison";
 import { PageComposition } from "@/components/single/PageComposition";
 import { ProcessAndContent } from "@/components/single/ProcessAndContent";
+import { Maintenance } from "@/components/single/Maintenance";
+import { FAQ } from "@/components/single/FAQ";
 import { Contact } from "@/components/single/Contact";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
       <PlanComparison />
       <PageComposition />
       <ProcessAndContent />
+      <Maintenance />
+      <FAQ />
       <Contact />
       
       {/* Footer */}
