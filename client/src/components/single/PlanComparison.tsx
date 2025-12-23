@@ -39,12 +39,13 @@ export function PlanComparison() {
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors"
+            className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors cursor-pointer"
           >
              <div className="flex justify-between items-start mb-8">
-               <h3 className="text-4xl font-display font-black text-white">SILVER</h3>
+               <h3 className="text-4xl font-display font-black text-white group-hover:text-primary transition-colors">SILVER</h3>
                <span className="font-mono text-xs text-muted-foreground border border-white/20 px-2 py-1">STARTER</span>
              </div>
              <p className="text-muted-foreground text-sm mb-12 h-10 font-bold">コストを抑えてオリジナルを持ちたい<br/>創業期・急募案件に最適</p>
@@ -54,24 +55,21 @@ export function PlanComparison() {
                <span className="text-xl text-muted-foreground ml-2">万円</span>
              </div>
 
-             <ul className="space-y-4 text-sm text-muted-foreground mb-12">
+             <ul className="space-y-4 text-sm text-muted-foreground mb-4">
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> ページ数: ~5P</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> デザイン: AI活用</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> 素材: ご支給</li>
              </ul>
-
-             <button className="w-full py-4 border border-white/20 text-white font-bold hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2">
-               SELECT PLAN <ArrowRight className="w-4 h-4" />
-             </button>
           </motion.div>
 
           {/* Gold - Highlight */}
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="lg:col-span-4 bg-primary text-black p-12 relative lg:-mt-8 lg:mb-8 shadow-2xl shadow-primary/20"
+            className="lg:col-span-4 bg-primary text-black p-12 relative lg:-mt-8 lg:mb-8 shadow-2xl shadow-primary/20 cursor-pointer"
           >
              <div className="absolute top-0 right-0 bg-black text-primary text-xs font-bold px-4 py-2">RECOMMENDED</div>
              
@@ -86,27 +84,24 @@ export function PlanComparison() {
                <span className="text-xl text-black/60 ml-2">万円</span>
              </div>
 
-             <ul className="space-y-4 text-sm text-black mb-12 font-bold">
+             <ul className="space-y-4 text-sm text-black mb-4 font-bold">
                <li className="flex items-center gap-3"><Check className="w-4 h-4" /> ページ数: ~10P</li>
                <li className="flex items-center gap-3"><Check className="w-4 h-4" /> デザイン: プロフェッショナル</li>
                <li className="flex items-center gap-3"><Check className="w-4 h-4" /> 素材: 撮影 (1日)</li>
              </ul>
-
-             <button className="w-full py-4 bg-black text-white font-bold hover:bg-black/80 transition-colors flex justify-center items-center gap-2">
-               START PROJECT <ArrowRight className="w-4 h-4" />
-             </button>
           </motion.div>
 
           {/* Platinum */}
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors"
+            className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors cursor-pointer"
           >
              <div className="flex justify-between items-start mb-8">
-               <h3 className="text-4xl font-display font-black text-white">PLATINUM</h3>
+               <h3 className="text-4xl font-display font-black text-white group-hover:text-primary transition-colors">PLATINUM</h3>
                <span className="font-mono text-xs text-muted-foreground border border-white/20 px-2 py-1">PREMIUM</span>
              </div>
              <p className="text-muted-foreground text-sm mb-12 h-10 font-bold">圧倒的な世界観でファンを作りたい<br/>リブランディング・優秀層採用</p>
@@ -116,15 +111,11 @@ export function PlanComparison() {
                <span className="text-xl text-muted-foreground ml-2">万円〜</span>
              </div>
 
-             <ul className="space-y-4 text-sm text-muted-foreground mb-12">
+             <ul className="space-y-4 text-sm text-muted-foreground mb-4">
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> ページ数: 15P~</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> デザイン: フルスクラッチ</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> 素材: 撮影 + 動画</li>
              </ul>
-
-             <button className="w-full py-4 border border-white/20 text-white font-bold hover:bg-white hover:text-black transition-colors flex justify-center items-center gap-2">
-               SELECT PLAN <ArrowRight className="w-4 h-4" />
-             </button>
           </motion.div>
 
         </div>
