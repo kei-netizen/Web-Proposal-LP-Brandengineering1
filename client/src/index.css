@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&display=swap');
 
 @theme inline {
   --radius-sm: 0rem;
@@ -28,7 +29,7 @@
   --color-secondary-foreground: var(--color-brand-white);
   
   --color-muted: hsl(0 0% 15%);
-  --color-muted-foreground: hsl(0 0% 60%);
+  --color-muted-foreground: hsl(0 0% 70%); /* Lightened for better visibility */
   
   --color-accent: var(--color-brand-yellow);
   --color-accent-foreground: black;
@@ -36,12 +37,12 @@
   --color-destructive: hsl(0 62.8% 30.6%);
   --color-destructive-foreground: var(--color-brand-white);
   
-  --color-border: hsl(0 0% 15%);
-  --color-input: hsl(0 0% 15%);
+  --color-border: hsl(0 0% 20%); /* Increased contrast */
+  --color-input: hsl(0 0% 20%);
   --color-ring: var(--color-brand-yellow);
   
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Inter', sans-serif;
+  --font-sans: 'Inter', 'Noto Sans JP', sans-serif;
+  --font-display: 'Inter', 'Noto Sans JP', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 }
 
@@ -54,6 +55,10 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-black tracking-tighter uppercase;
+  }
+  /* Increase base font weight for better visibility on dark backgrounds */
+  p, li, td, th {
+    @apply font-medium;
   }
 }
 

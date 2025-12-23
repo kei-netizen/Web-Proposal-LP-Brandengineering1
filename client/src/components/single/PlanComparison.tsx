@@ -47,7 +47,7 @@ export function PlanComparison() {
                <h3 className="text-4xl font-display font-black text-white">SILVER</h3>
                <span className="font-mono text-xs text-muted-foreground border border-white/20 px-2 py-1">STARTER</span>
              </div>
-             <p className="text-muted-foreground text-sm mb-12 h-10">コストを抑えてオリジナルを持ちたい<br/>創業期・急募案件に最適</p>
+             <p className="text-muted-foreground text-sm mb-12 h-10 font-bold">コストを抑えてオリジナルを持ちたい<br/>創業期・急募案件に最適</p>
              
              <div className="mb-12">
                <span className="text-6xl font-display font-black text-white">50</span>
@@ -77,9 +77,9 @@ export function PlanComparison() {
              
              <div className="flex justify-between items-start mb-8">
                <h3 className="text-5xl font-display font-black">GOLD</h3>
-               <span className="font-mono text-xs text-black/60 border border-black/20 px-2 py-1">STANDARD</span>
+               <span className="font-mono text-xs text-black/80 border border-black/40 px-2 py-1 font-bold">STANDARD</span>
              </div>
-             <p className="text-black/70 text-sm mb-12 h-10 font-medium">企業の想いを言葉と写真で伝えたい<br/>信頼獲得・ミスマッチ防止</p>
+             <p className="text-black/80 text-sm mb-12 h-10 font-bold">企業の想いを言葉と写真で伝えたい<br/>信頼獲得・ミスマッチ防止</p>
              
              <div className="mb-12 border-b border-black/10 pb-12">
                <span className="text-7xl font-display font-black">100</span>
@@ -109,7 +109,7 @@ export function PlanComparison() {
                <h3 className="text-4xl font-display font-black text-white">PLATINUM</h3>
                <span className="font-mono text-xs text-muted-foreground border border-white/20 px-2 py-1">PREMIUM</span>
              </div>
-             <p className="text-muted-foreground text-sm mb-12 h-10">圧倒的な世界観でファンを作りたい<br/>リブランディング・優秀層採用</p>
+             <p className="text-muted-foreground text-sm mb-12 h-10 font-bold">圧倒的な世界観でファンを作りたい<br/>リブランディング・優秀層採用</p>
              
              <div className="mb-12">
                <span className="text-6xl font-display font-black text-white">180</span>

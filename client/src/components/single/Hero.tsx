@@ -28,12 +28,12 @@ export function Hero() {
            </div>
            
            <h2 className="text-6xl md:text-7xl lg:text-8xl font-display font-black leading-[0.85] tracking-tighter">
-             START<br/>
-             HANSO<br/>
-             STUDIO
+             CRAFT<br/>
+             YOUR<br/>
+             VISION
            </h2>
            
-           <p className="font-sans text-black/80 font-medium text-lg max-w-sm leading-relaxed border-l-2 border-black/20 pl-6">
+           <p className="font-sans text-black/90 font-bold text-lg max-w-sm leading-relaxed border-l-4 border-black pl-6">
              ご予算と目的に応じた最適なクリエイティブソリューション。<br/>
              AI活用から完全ブランディングまで。
            </p>
