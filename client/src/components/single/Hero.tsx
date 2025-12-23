@@ -39,7 +39,10 @@ export function Hero() {
            </p>
 
            <div className="pt-8">
-              <button className="px-8 py-4 bg-black text-white font-bold tracking-widest text-sm hover:bg-black/80 transition-colors flex items-center gap-2">
+              <button 
+                onClick={() => document.getElementById('plans')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 bg-black text-white font-bold tracking-widest text-sm hover:bg-black/80 transition-colors flex items-center gap-2"
+              >
                 VIEW PLANS <ArrowDown className="w-4 h-4" />
               </button>
            </div>

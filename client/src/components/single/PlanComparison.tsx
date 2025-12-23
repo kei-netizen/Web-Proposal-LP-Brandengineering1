@@ -3,7 +3,7 @@ import { ArrowRight, Check } from 'lucide-react';
 
 export function PlanComparison() {
   return (
-    <section className="bg-background relative py-32 overflow-hidden">
+    <section id="plans" className="bg-background relative py-32 overflow-hidden">
       {/* Dynamic Background Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 -z-10" />
 
