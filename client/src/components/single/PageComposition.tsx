@@ -19,11 +19,11 @@ const recruitPages = [
   { name: '募集要項一覧', starter: true, standard: true, premium: true },
   { name: '会社・事業紹介', starter: true, standard: true, premium: true },
   { name: '社員インタビュー', starter: true, standard: true, premium: true },
-  { name: '働く環境・制度', starter: true, standard: true, premium: true },
-  { name: 'キャリアパス', starter: true, standard: true, premium: true },
-  { name: '数字で見る◯◯', starter: true, standard: true, premium: true },
-  { name: '代表メッセージ', starter: true, standard: true, premium: true },
-  { name: 'クロストーク', starter: true, standard: true, premium: true },
+  { name: '働く環境・制度', starter: false, standard: true, premium: true },
+  { name: 'キャリアパス', starter: false, standard: true, premium: true },
+  { name: '数字で見る◯◯', starter: false, standard: true, premium: true },
+  { name: '代表メッセージ', starter: false, standard: true, premium: true },
+  { name: 'クロストーク', starter: false, standard: true, premium: true },
   { name: 'エントリーフォーム', starter: true, standard: true, premium: true },
 ];
 
