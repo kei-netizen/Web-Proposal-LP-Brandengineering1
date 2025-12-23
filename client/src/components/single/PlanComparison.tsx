@@ -13,6 +13,7 @@ export function PlanComparison() {
              initial={{ opacity: 0, y: 50 }}
              whileInView={{ opacity: 1, y: 0 }}
              viewport={{ once: true }}
+             transition={{ duration: 1.0, ease: "easeOut" }}
            >
              <p className="text-primary font-mono text-sm tracking-widest mb-4">OUR PRICING</p>
              <h2 className="text-6xl md:text-8xl font-display font-black text-white leading-none">
@@ -23,6 +24,7 @@ export function PlanComparison() {
              initial={{ opacity: 0, x: 50 }}
              whileInView={{ opacity: 1, x: 0 }}
              viewport={{ once: true }}
+             transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
              className="md:text-right max-w-md mt-8 md:mt-0"
            >
              <p className="text-muted-foreground text-lg leading-relaxed">
@@ -41,7 +43,7 @@ export function PlanComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
             className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors cursor-pointer"
           >
              <div className="flex justify-between items-start mb-8">
@@ -68,7 +70,7 @@ export function PlanComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ duration: 1.0, delay: 0.4, ease: "easeOut" }}
             className="lg:col-span-4 bg-primary text-black p-12 relative lg:-mt-8 lg:mb-8 shadow-2xl shadow-primary/20 cursor-pointer"
           >
              <div className="absolute top-0 right-0 bg-black text-primary text-xs font-bold px-4 py-2">RECOMMENDED</div>
@@ -97,7 +99,7 @@ export function PlanComparison() {
             whileInView={{ opacity: 1, y: 0 }}
             whileHover={{ scale: 1.02 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ duration: 1.0, delay: 0.6, ease: "easeOut" }}
             className="lg:col-span-4 bg-card border border-white/10 p-10 relative group hover:bg-white/5 transition-colors cursor-pointer"
           >
              <div className="flex justify-between items-start mb-8">

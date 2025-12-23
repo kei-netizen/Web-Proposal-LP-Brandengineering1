@@ -9,6 +9,7 @@ export function Concept() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             className="text-3xl md:text-5xl font-display font-black tracking-tighter mb-8 leading-tight"
           >
             Web制作は<br className="md:hidden" />アートではなく<br className="md:hidden" />エンジニアリング。
@@ -18,7 +19,7 @@ export function Concept() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3, duration: 1.2, ease: "easeOut" }}
             className="text-lg md:text-2xl font-bold max-w-4xl leading-relaxed"
           >
             製造業のポテンシャルを解放する、<br className="hidden md:block" />

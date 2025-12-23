@@ -33,6 +33,7 @@ export function Innovation() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-display font-black text-white mb-8"
           >
             INNOVATION
@@ -42,7 +43,7 @@ export function Innovation() {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.3, duration: 1.2, ease: "easeOut" }}
             className="border-l-4 border-primary pl-6 max-w-2xl"
           >
             <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
@@ -62,7 +63,7 @@ export function Innovation() {
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: 0.2 + (i * 0.1) }}
+              transition={{ delay: 0.2 + (i * 0.2), duration: 1.0, ease: "easeOut" }}
               className="bg-card border border-white/10 p-8 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2"
             >
               <div className="mb-8 p-4 bg-white/5 inline-block rounded-none group-hover:bg-primary/20 transition-colors">

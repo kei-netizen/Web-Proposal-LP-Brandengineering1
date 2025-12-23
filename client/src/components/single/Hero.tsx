@@ -13,13 +13,13 @@ export function Hero() {
       <motion.div 
         initial={{ x: '-100%' }}
         animate={{ x: 0 }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
         className="w-full lg:w-[40%] bg-primary text-black relative z-20 flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0"
       >
          <motion.div 
-           initial={{ opacity: 0, y: 20 }}
+           initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
-           transition={{ delay: 0.6, duration: 0.8 }}
+           transition={{ delay: 1.0, duration: 1.2, ease: "easeOut" }}
            className="space-y-8"
          >
            <div className="flex items-center gap-4">
@@ -76,7 +76,7 @@ export function Hero() {
           <motion.h1 
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
+            transition={{ delay: 1.2, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="text-[10vw] font-display font-black text-white tracking-tighter leading-none mix-blend-difference"
           >
             BEYOND
@@ -84,7 +84,7 @@ export function Hero() {
           <motion.h1 
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.0, duration: 0.8 }}
+            transition={{ delay: 1.5, duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
             className="text-[10vw] font-display font-black text-transparent stroke-text tracking-tighter leading-none"
           >
             DESIGN
