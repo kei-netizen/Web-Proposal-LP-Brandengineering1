@@ -144,13 +144,13 @@ export function PlanComparison() {
                   <td className="p-6">
                     <strong className="block mb-2 text-white text-lg">AI活用オリジナル</strong>
                     <span className="text-muted-foreground text-xs leading-relaxed block">
-                      AIによるKV生成<br/>＋デザイナー調整
+                      AIによるキービジュアル生成<br/>＋デザイナー調整
                     </span>
                   </td>
                   <td className="p-6 bg-primary/5">
                     <strong className="block mb-2 text-primary text-lg">デザイナー制作</strong>
                     <span className="text-muted-foreground text-xs leading-relaxed block">
-                      KV ＋ 下層MV<br/>(プロによる意図的な設計)
+                      キービジュアル ＋ 下層メインビジュアル<br/>(プロによる意図的な設計)
                     </span>
                   </td>
                   <td className="p-6">
