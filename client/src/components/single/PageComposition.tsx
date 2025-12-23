@@ -14,6 +14,19 @@ const companyPages = [
   { name: 'プライバシーポリシー', starter: false, standard: true, premium: true },
 ];
 
+const recruitPages = [
+  { name: 'TOPページ', starter: true, standard: true, premium: true },
+  { name: '募集要項一覧', starter: true, standard: true, premium: true },
+  { name: 'エントリーフォーム', starter: true, standard: true, premium: true },
+  { name: '会社・事業紹介', starter: true, standard: true, premium: true },
+  { name: '代表メッセージ', starter: false, standard: true, premium: true },
+  { name: '社員インタビュー', starter: false, standard: true, premium: true },
+  { name: '働く環境・制度', starter: false, standard: true, premium: true },
+  { name: '数字で見る◯◯', starter: false, standard: false, premium: true },
+  { name: 'クロストーク', starter: false, standard: false, premium: true },
+  { name: 'キャリアパス', starter: false, standard: false, premium: true },
+];
+
 function StatusIcon({ status }: { status: boolean | string }) {
   if (status === true) return <Check className="w-5 h-5 text-primary mx-auto" />;
   if (status === false) return <Minus className="w-4 h-4 text-white/10 mx-auto" />;
@@ -37,27 +50,66 @@ export function PageComposition() {
           </p>
         </div>
 
-        <div className="overflow-x-auto">
-           <table className="w-full text-left border-collapse min-w-[600px]">
-              <thead>
-                <tr className="border-b-2 border-white/10">
-                   <th className="p-6 text-white/40 font-mono text-sm uppercase">Page Item</th>
-                   <th className="p-6 text-center text-white font-bold w-32">Silver</th>
-                   <th className="p-6 text-center text-primary font-bold w-32 bg-white/5">Gold</th>
-                   <th className="p-6 text-center text-white font-bold w-32">Platinum</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-white/5">
-                 {companyPages.map((page, i) => (
-                   <tr key={i} className="group hover:bg-white/5 transition-colors">
-                      <td className="p-6 font-bold text-white group-hover:text-primary transition-colors">{page.name}</td>
-                      <td className="p-6 text-center"><StatusIcon status={page.starter} /></td>
-                      <td className="p-6 text-center bg-white/5"><StatusIcon status={page.standard} /></td>
-                      <td className="p-6 text-center"><StatusIcon status={page.premium} /></td>
-                   </tr>
-                 ))}
-              </tbody>
-           </table>
+        <div className="grid lg:grid-cols-2 gap-16">
+          {/* Corporate Site */}
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+               <div className="w-2 h-8 bg-white" />
+               <h3 className="text-2xl font-display font-bold text-white">CORPORATE SITE</h3>
+            </div>
+            <div className="overflow-x-auto">
+               <table className="w-full text-left border-collapse min-w-[500px]">
+                  <thead>
+                    <tr className="border-b-2 border-white/10">
+                       <th className="p-4 text-white/40 font-mono text-xs uppercase">Page Item</th>
+                       <th className="p-4 text-center text-white font-bold w-20">Silver</th>
+                       <th className="p-4 text-center text-primary font-bold w-20 bg-white/5">Gold</th>
+                       <th className="p-4 text-center text-white font-bold w-20">Platinum</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5">
+                     {companyPages.map((page, i) => (
+                       <tr key={i} className="group hover:bg-white/5 transition-colors">
+                          <td className="p-4 font-bold text-white group-hover:text-primary transition-colors text-sm">{page.name}</td>
+                          <td className="p-4 text-center"><StatusIcon status={page.starter} /></td>
+                          <td className="p-4 text-center bg-white/5"><StatusIcon status={page.standard} /></td>
+                          <td className="p-4 text-center"><StatusIcon status={page.premium} /></td>
+                       </tr>
+                     ))}
+                  </tbody>
+               </table>
+            </div>
+          </div>
+
+          {/* Recruit Site */}
+          <div>
+            <div className="flex items-center gap-4 mb-8">
+               <div className="w-2 h-8 bg-primary" />
+               <h3 className="text-2xl font-display font-bold text-white">RECRUIT SITE</h3>
+            </div>
+            <div className="overflow-x-auto">
+               <table className="w-full text-left border-collapse min-w-[500px]">
+                  <thead>
+                    <tr className="border-b-2 border-white/10">
+                       <th className="p-4 text-white/40 font-mono text-xs uppercase">Page Item</th>
+                       <th className="p-4 text-center text-white font-bold w-20">Silver</th>
+                       <th className="p-4 text-center text-primary font-bold w-20 bg-white/5">Gold</th>
+                       <th className="p-4 text-center text-white font-bold w-20">Platinum</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5">
+                     {recruitPages.map((page, i) => (
+                       <tr key={i} className="group hover:bg-white/5 transition-colors">
+                          <td className="p-4 font-bold text-white group-hover:text-primary transition-colors text-sm">{page.name}</td>
+                          <td className="p-4 text-center"><StatusIcon status={page.starter} /></td>
+                          <td className="p-4 text-center bg-white/5"><StatusIcon status={page.standard} /></td>
+                          <td className="p-4 text-center"><StatusIcon status={page.premium} /></td>
+                       </tr>
+                     ))}
+                  </tbody>
+               </table>
+            </div>
+          </div>
         </div>
         
       </div>
