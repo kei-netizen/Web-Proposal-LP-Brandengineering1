@@ -129,25 +129,98 @@ export function PlanComparison() {
 
         </div>
 
-        {/* Detailed Spec List (Minimal) */}
+        {/* Detailed Spec List (Full) */}
         <div className="border-t border-white/10 pt-20">
            <div className="flex items-center gap-4 mb-12">
              <div className="h-[2px] w-12 bg-primary" />
-             <h3 className="font-display font-bold text-2xl text-white">DETAILED SPECS</h3>
+             <h3 className="font-display font-bold text-2xl text-white">DETAILED SPECIFICATION</h3>
            </div>
            
-           <div className="grid md:grid-cols-4 gap-8">
-              {['デザイン', 'ライティング', '写真素材', '負担'].map((item, i) => (
-                <div key={i} className="border-l border-white/10 pl-6">
-                   <h4 className="text-muted-foreground font-mono text-xs mb-2 uppercase">{item}</h4>
-                   <p className="text-white text-sm">
-                     {i === 0 && "AIハイブリッド vs プロフェッショナル vs アートディレクション"}
-                     {i === 1 && "ご支給 vs 新規作成 vs 取材・完全代行"}
-                     {i === 2 && "ご支給 vs プロ撮影 vs 撮影＋動画制作"}
-                     {i === 3 && "高 (素材準備) vs 中 (取材) vs 低 (丸投げ)"}
-                   </p>
-                </div>
-              ))}
+           <div className="overflow-x-auto">
+            <table className="w-full text-left border-collapse min-w-[800px]">
+              <thead>
+                <tr className="border-b border-white/10 bg-white/5">
+                  <th className="p-6 font-mono text-xs text-muted-foreground font-normal w-1/4">ITEM</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4">Silver</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4 text-primary bg-primary/5">Gold</th>
+                  <th className="p-6 font-display font-bold text-lg w-1/4">Platinum</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/5 text-sm">
+                {/* Design */}
+                <tr className="group hover:bg-white/5 transition-colors">
+                  <td className="p-6 font-medium text-white/60">デザイン</td>
+                  <td className="p-6">
+                    <strong className="block mb-2 text-white text-lg">AI活用オリジナル</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      AIによるKV生成<br/>＋デザイナー調整
+                    </span>
+                  </td>
+                  <td className="p-6 bg-primary/5">
+                    <strong className="block mb-2 text-primary text-lg">デザイナー制作</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      KV ＋ 下層MV<br/>(プロによる意図的な設計)
+                    </span>
+                  </td>
+                  <td className="p-6">
+                    <strong className="block mb-2 text-white text-lg">フルスクラッチ</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      アートディレクション<br/>全ページ独自演出・動画
+                    </span>
+                  </td>
+                </tr>
+                {/* Writing */}
+                <tr className="group hover:bg-white/5 transition-colors">
+                  <td className="p-6 font-medium text-white/60">ライティング</td>
+                  <td className="p-6 text-muted-foreground">ご支給<br/>(貴社でご用意)</td>
+                  <td className="p-6 bg-primary/5">
+                    <strong className="block mb-2 text-primary text-lg">新規ライティング</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      メッセージ・強み等<br/>※事業データはリライト
+                    </span>
+                  </td>
+                  <td className="p-6">
+                    <strong className="block mb-2 text-white text-lg">取材・完全代行</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      プロの編集・構成<br/>インタビュー取材含む
+                    </span>
+                  </td>
+                </tr>
+                {/* Photo */}
+                <tr className="group hover:bg-white/5 transition-colors">
+                  <td className="p-6 font-medium text-white/60">写真素材</td>
+                  <td className="p-6 text-muted-foreground">ご支給<br/>(貴社でご用意 or 素材集)</td>
+                  <td className="p-6 bg-primary/5">
+                    <strong className="block mb-2 text-primary text-lg">プロカメラマン撮影</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      1日撮影 / 社員・外観等
+                    </span>
+                  </td>
+                  <td className="p-6">
+                    <strong className="block mb-2 text-white text-lg">撮影 ＋ 動画制作</strong>
+                    <span className="text-muted-foreground text-xs leading-relaxed block">
+                      プロの演出・ディレクション
+                    </span>
+                  </td>
+                </tr>
+                {/* Effort */}
+                <tr className="group hover:bg-white/5 transition-colors">
+                  <td className="p-6 font-medium text-white/60">お客様負担</td>
+                  <td className="p-6">
+                    <span className="inline-block px-2 py-1 bg-white/10 rounded mb-2 font-bold text-xs">高</span><br/>
+                    <span className="text-xs text-muted-foreground">写真・原稿の準備が必要</span>
+                  </td>
+                  <td className="p-6 bg-primary/5">
+                    <span className="inline-block px-2 py-1 bg-primary/20 text-primary rounded mb-2 font-bold text-xs">中</span><br/>
+                    <span className="text-xs text-muted-foreground">取材・撮影日の調整</span>
+                  </td>
+                  <td className="p-6">
+                    <span className="inline-block px-2 py-1 bg-white text-black rounded mb-2 font-bold text-xs">低</span><br/>
+                    <span className="text-xs text-muted-foreground">企画から丸投げ可能</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
            </div>
         </div>
       </div>
