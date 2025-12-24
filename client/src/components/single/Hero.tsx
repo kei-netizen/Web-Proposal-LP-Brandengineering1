@@ -48,12 +48,6 @@ export function Hero() {
            </div>
          </motion.div>
          
-         <div className="absolute bottom-12 left-16 hidden lg:block">
-            <div className="flex items-end gap-2">
-               <span className="text-6xl font-black leading-none">01</span>
-               <span className="text-sm font-bold pb-2">/ 05</span>
-            </div>
-         </div>
       </motion.div>
 
       {/* Right Image Panel - Dark */}

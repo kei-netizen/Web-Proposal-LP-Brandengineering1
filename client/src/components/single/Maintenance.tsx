@@ -23,9 +23,10 @@ export function Maintenance() {
                transition={{ duration: 1.2, ease: "easeOut" }}
                className="text-6xl md:text-8xl font-display font-black text-white mb-8 leading-none"
              >
+               <span className="text-primary text-2xl md:text-3xl block mb-4 font-mono tracking-widest">04.</span>
                MAINTENANCE
              </motion.h2>
-             <p className="text-muted-foreground text-lg leading-relaxed max-w-md">
+             <p className="text-white/80 font-bold text-lg leading-relaxed max-w-md">
                作った後も安心を。<br/>
                専門的な管理業務はすべてお任せください。
              </p>

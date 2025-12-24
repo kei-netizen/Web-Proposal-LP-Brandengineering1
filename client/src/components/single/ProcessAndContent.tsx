@@ -9,13 +9,14 @@ export function ProcessAndContent() {
         <div className="flex flex-col md:flex-row mb-32 relative">
            <div className="w-full md:w-1/2">
              <h2 className="text-6xl md:text-8xl font-display font-black text-white leading-none">
+               <span className="text-primary text-2xl md:text-3xl block mb-4 font-mono tracking-widest">03.</span>
                PROCESS<br/>
                <span className="text-primary">&</span> METHOD
              </h2>
            </div>
            <div className="w-full md:w-1/2 flex items-end justify-end">
              <div className="max-w-md text-right">
-                <p className="text-muted-foreground text-lg">
+                <p className="text-white/80 font-bold text-lg leading-relaxed">
                   クリエイティブの質を決めるのは「プロセス」です。<br/>
                   AIのスピードか、人の情緒か、アートの衝撃か。
                 </p>

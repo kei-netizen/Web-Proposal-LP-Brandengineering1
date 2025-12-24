@@ -36,6 +36,7 @@ export function Innovation() {
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="text-6xl md:text-8xl font-display font-black text-white mb-8"
           >
+            <span className="text-primary text-2xl md:text-3xl block mb-2 font-mono tracking-widest">01.</span>
             INNOVATION
           </motion.h2>
           
@@ -49,7 +50,7 @@ export function Innovation() {
             <h3 className="text-xl md:text-2xl font-bold text-white mb-4">
               なぜ、高品質なのに50万円から可能なのか？
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-white/80 font-bold leading-relaxed text-lg">
               従来の人月商売は行いません。AIとクラウド技術で工程を圧縮し、本質的な価値に投資します。
             </p>
           </motion.div>

@@ -15,7 +15,7 @@ export function PlanComparison() {
              viewport={{ once: true }}
              transition={{ duration: 1.0, ease: "easeOut" }}
            >
-             <p className="text-primary font-mono text-sm tracking-widest mb-4">OUR PRICING</p>
+             <p className="text-primary font-mono text-xl tracking-widest mb-4 font-bold">02. OUR PRICING</p>
              <h2 className="text-6xl md:text-8xl font-display font-black text-white leading-none">
                CHOOSE<br/>YOUR PLAN
              </h2>
@@ -27,7 +27,7 @@ export function PlanComparison() {
              transition={{ duration: 1.0, delay: 0.2, ease: "easeOut" }}
              className="md:text-right max-w-md mt-8 md:mt-0"
            >
-             <p className="text-muted-foreground text-lg leading-relaxed">
+             <p className="text-white/80 font-bold text-lg leading-relaxed">
                ご予算と目的に合わせて選べる3つのプラン。<br/>
                全プランで<span className="text-primary bg-primary/10 px-1">オリジナルデザイン</span>を保証します。
              </p>
