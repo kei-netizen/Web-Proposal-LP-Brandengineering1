@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion';
 import heroBg from '@assets/generated_images/abstract_3d_industrial_yellow_bolt_on_black_background.png';
+import logo from '@assets/BE_logo_1766577978653.png';
 import { ArrowDown } from 'lucide-react';
 
 export function Hero() {
@@ -16,6 +17,10 @@ export function Hero() {
         transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
         className="w-full lg:w-[40%] bg-primary text-black relative z-20 flex flex-col justify-center px-8 md:px-16 py-20 lg:py-0"
       >
+         <div className="absolute top-8 left-8 md:top-12 md:left-12">
+           <img src={logo} alt="Business Division Logo" className="h-8 md:h-10 w-auto" />
+         </div>
+
          <motion.div 
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
