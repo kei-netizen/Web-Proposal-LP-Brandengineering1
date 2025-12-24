@@ -58,7 +58,7 @@ export function PlanComparison() {
              </div>
 
              <ul className="space-y-4 text-sm text-muted-foreground mb-4">
-               <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> ページ数: ~5P</li>
+               <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> ページ数: ~6P</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> デザイン: AI活用</li>
                <li className="flex items-center gap-3"><div className="w-1 h-1 bg-white" /> 素材: ご支給</li>
              </ul>

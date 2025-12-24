@@ -4,7 +4,7 @@ import { Check, Minus } from 'lucide-react';
 const companyPages = [
   { name: 'TOPページ', starter: true, standard: true, premium: true },
   { name: '事業紹介', starter: true, standard: true, premium: true },
-  { name: '導入実績・事例', starter: false, standard: true, premium: true },
+  { name: '導入実績・事例', starter: true, standard: true, premium: true },
   { name: '私たちの強み', starter: false, standard: true, premium: true },
   { name: '会社案内', starter: true, standard: true, premium: true },
   { name: '代表メッセージ', starter: false, standard: true, premium: true },
