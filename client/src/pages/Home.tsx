@@ -6,6 +6,7 @@ import { PlanComparison } from "@/components/single/PlanComparison";
 import { PageComposition } from "@/components/single/PageComposition";
 import { ProcessAndContent } from "@/components/single/ProcessAndContent";
 import { Maintenance } from "@/components/single/Maintenance";
+import { WhyHighQuality } from "@/components/single/WhyHighQuality";
 import { FAQ } from "@/components/single/FAQ";
 import { Contact } from "@/components/single/Contact";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <PageComposition />
       <ProcessAndContent />
       <Maintenance />
+      <WhyHighQuality />
       <FAQ />
       <Contact />
       
