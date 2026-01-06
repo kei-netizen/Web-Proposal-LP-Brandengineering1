@@ -209,7 +209,7 @@ export function WhyHighQuality() {
           >
             「1.5ヶ月かけて作るものを、1週間で作る。<br/>
             浮いた時間と予算を、<br/>
-            <span className="text-primary">御社の魅力を伝える『表現』</span>に使いませんか？」
+            <span className="inline-block"><span className="text-primary">御社の魅力を伝える『表現』</span>に</span><span className="inline-block">使いませんか？」</span>
           </motion.p>
         </div>
 
