@@ -45,12 +45,27 @@ export function FAQ() {
       )
     },
     {
-      q: "ITに詳しくないのですが、運用は難しくありませんか？",
-      a: "専門知識は一切不要です。弊社が管理を代行しますので、御社は面倒な更新作業から解放されます。独自のドメイン（.co.jp等）もそのまま利用可能です。"
+      q: "ReplitやAIで制作したコード・画像・動画の著作権は大丈夫ですか？",
+      a: (
+        <div className="space-y-4">
+          <p className="font-bold text-white">はい、問題ありません。納品物の「所有権」および「利用権」はすべてお客様に帰属します。</p>
+          <p>
+            お客様が最も懸念される権利関係について、当社は以下の3つの基準を厳守して運用しております。
+          </p>
+          <ul className="list-decimal list-inside space-y-1 ml-2">
+            <li><span className="font-bold text-white/90">成果物の権利譲渡:</span> Replit上で記述したプログラムコードや、制作したデザインデータの所有権・利用権は、<span className="font-bold text-white">納品時にお客様へ完全に譲渡</span>いたします。プラットフォーム側が権利を主張することはありませんので、自社の資産として自由に運用・改変いただけます。</li>
+            <li><span className="font-bold text-white/90">AI生成物の商用利用:</span> 画像や動画の生成には、<span className="font-bold text-white">「商用利用」が規約で認められている有料のAIモデル</span>のみを使用しています。また、既存の著作権を侵害していないか、デザイナーが目視で確認した上で実装するため、法的なリスクもクリアになっています。</li>
+            <li><span className="font-bold text-white/90">機密情報の保護:</span> Replit上で開発されるコードは、お客様専用の<span className="font-bold text-white">プライベート環境（非公開設定）</span>で厳重に管理されます。意図せず外部に公開されることはありませんので、技術情報やノウハウの流出もありません。</li>
+          </ul>
+          <p className="font-bold border-l-2 border-primary pl-4 text-white">
+            お客様は、技術的な権利関係を気にすることなく、「完全に自社の所有物」としてWebサイトをご利用いただけます。
+          </p>
+        </div>
+      )
     },
     {
-      q: "デザインの著作権は？",
-      a: "納品時に全ての権利を譲渡いたします。AIを活用して作成した画像素材も、商用利用可能な状態で納品します。"
+      q: "ITに詳しくないのですが、運用は難しくありませんか？",
+      a: "専門知識は一切不要です。弊社が管理を代行しますので、御社は面倒な更新作業から解放されます。独自のドメイン（.co.jp等）もそのまま利用可能です。"
     },
     {
       q: "原稿を書く時間がありません。",
