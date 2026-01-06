@@ -154,7 +154,7 @@ export function WhyHighQuality() {
                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 text-[10px] text-white/40 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">会議・資料代</div>
                     </div>
                     <div className="h-full bg-primary/20 w-[10%] flex items-center justify-center relative group">
-                       <span className="text-xs md:text-sm font-bold text-white/40">コンテンツ制作費 10%</span>
+                       <span className="text-[8px] md:text-[10px] leading-tight font-bold text-white/40 text-center px-1">コンテンツ<br/>制作費 10%</span>
                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 text-[10px] text-white/40 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">コンテンツ費用</div>
                     </div>
                   </div>
