@@ -146,15 +146,15 @@ export function WhyHighQuality() {
                   </div>
                   <div className="h-16 md:h-24 flex w-full">
                     <div className="h-full bg-white/20 w-[70%] flex items-center justify-center border-r border-black/20 relative group">
-                       <span className="text-xs md:text-sm font-bold text-white/80">人件費 70%</span>
+                       <span className="text-xs md:text-sm font-bold text-white/80">デザイン・実装人件費 70%</span>
                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 text-[10px] text-white/40 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">作業代で消える</div>
                     </div>
                     <div className="h-full bg-white/10 w-[20%] flex items-center justify-center border-r border-black/20 relative group">
                        <span className="text-xs md:text-sm font-bold text-white/60">管理 20%</span>
                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 text-[10px] text-white/40 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">会議・資料代</div>
                     </div>
-                    <div className="h-full bg-white/5 w-[10%] flex items-center justify-center relative group">
-                       <span className="text-xs md:text-sm font-bold text-white/40">制作 10%</span>
+                    <div className="h-full bg-primary/20 w-[10%] flex items-center justify-center relative group">
+                       <span className="text-xs md:text-sm font-bold text-white/40">コンテンツ制作費 10%</span>
                        <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 text-[10px] text-white/40 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity">コンテンツ費用</div>
                     </div>
                   </div>
