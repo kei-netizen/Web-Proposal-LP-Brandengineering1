@@ -25,6 +25,26 @@ export function FAQ() {
       )
     },
     {
+      q: "クラウド環境（Replit）のセキュリティは大丈夫ですか？",
+      a: (
+        <div className="space-y-4">
+          <p className="font-bold text-white">はい、世界最高水準のセキュリティ基盤の上で運用されるため、非常に安全です。</p>
+          <p>
+            Replitは、Googleなどが採用している強固なクラウドインフラ（Google Cloud Platform）を基盤として動作しています。
+            「古いサーバーを自社で管理し、更新を忘れて脆弱になる」ことの方が、現代においては最大のリスクです。当社はReplitを採用することで、以下の3つのセキュリティメリットを提供します。
+          </p>
+          <ul className="list-decimal list-inside space-y-1 ml-2">
+            <li><span className="font-bold text-white/90">世界基準のインフラ:</span> 2,000万人以上の開発者が利用するプラットフォームであり、OSや言語のセキュリティパッチ（更新）が自動で適用され、常に最新の状態が保たれます。</li>
+            <li><span className="font-bold text-white/90">通信の暗号化:</span> 全ページで「HTTPS（SSL化）」が標準適用され、通信内容はすべて暗号化されます。なりすましや盗聴を防止します。</li>
+            <li><span className="font-bold text-white/90">情報の厳重管理:</span> パスワードやAPIキーなどの機密情報は、コードとは分離された特殊な領域（Secrets機能）で暗号化して管理され、外部からの不正アクセスを防ぎます。</li>
+          </ul>
+          <p className="font-bold border-l-2 border-primary pl-4 text-white">
+            お客様は面倒なセキュリティ対策を意識することなく、「大手IT企業と同等のセキュリティ環境」を月額1万円の保守費用内で手に入れることができます。
+          </p>
+        </div>
+      )
+    },
+    {
       q: "ITに詳しくないのですが、運用は難しくありませんか？",
       a: "専門知識は一切不要です。弊社が管理を代行しますので、御社は面倒な更新作業から解放されます。独自のドメイン（.co.jp等）もそのまま利用可能です。"
     },
