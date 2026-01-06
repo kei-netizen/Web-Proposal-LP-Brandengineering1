@@ -1,12 +1,31 @@
 import { motion } from 'framer-motion';
 import { Plus } from 'lucide-react';
-import { useState } from 'react';
 import * as Accordion from '@radix-ui/react-accordion';
 
 export function FAQ() {
   const items = [
     {
-      q: "バイブコーディングツールReplitのことが分かりません。",
+      q: "バイブコーディングツール「Replit（レプリット）」とは何ですか？",
+      a: (
+        <div className="space-y-4">
+          <p className="font-bold text-white">AIと対話しながらシステムを作り上げる、次世代のクラウド開発プラットフォームです。</p>
+          <p>
+            Replitは、GoogleやMicrosoft出身のエンジニアが開発した、世界で最も注目されている開発環境の一つです。「バイブコーディング（Vibe Coding）」とは、専門的なコードを一文字ずつ手入力するのではなく、「AIへの自然言語による指示（直感的なイメージ）」で瞬時にプログラムを生成・実行する最新の開発手法を指します。
+          </p>
+          <p>当社はこのReplitを全面採用することで、以下の3つのメリットをお客様に提供しています。</p>
+          <ul className="list-decimal list-inside space-y-1 ml-2">
+            <li><span className="font-bold text-white/90">圧倒的な開発スピード:</span> AIとの協業により、制作期間を従来の数分の一に短縮しました。</li>
+            <li><span className="font-bold text-white/90">サーバー費用の圧縮:</span> 開発環境がそのまま本番サーバーとして機能するため、高額なサーバー構築費が不要です。</li>
+            <li><span className="font-bold text-white/90">強固なセキュリティ:</span> 全世界の開発者が利用するプラットフォームであり、セキュリティ対策や環境更新が自動で行われます。</li>
+          </ul>
+          <p className="font-bold border-l-2 border-primary pl-4 text-white">
+            つまり、「AI時代の恩恵を最大限に活かし、高品質なサイトを安く・速く作るためのエンジン」とお考えください。
+          </p>
+        </div>
+      )
+    },
+    {
+      q: "ITに詳しくないのですが、運用は難しくありませんか？",
       a: "専門知識は一切不要です。弊社が管理を代行しますので、御社は面倒な更新作業から解放されます。独自のドメイン（.co.jp等）もそのまま利用可能です。"
     },
     {
@@ -41,9 +60,11 @@ export function FAQ() {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="overflow-hidden data-[state=closed]:animate-collapse-up data-[state=open]:animate-collapse-down">
-                <div className="p-8 pt-0 text-muted-foreground leading-relaxed pl-16">
-                  <span className="text-white/40 mr-4 font-mono font-bold -ml-8">A.</span>
-                  {item.a}
+                <div className="p-8 pt-0 text-muted-foreground leading-relaxed pl-16 flex">
+                  <span className="text-white/40 mr-4 font-mono font-bold -ml-8 shrink-0">A.</span>
+                  <div className="flex-grow">
+                    {item.a}
+                  </div>
                 </div>
               </Accordion.Content>
             </Accordion.Item>
