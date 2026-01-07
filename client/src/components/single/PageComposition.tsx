@@ -12,6 +12,7 @@ const companyPages = [
   { name: 'お問い合わせ', starter: true, standard: true, premium: true },
   { name: 'お知らせ', starter: true, standard: true, premium: true },
   { name: 'プライバシーポリシー', starter: false, standard: true, premium: true },
+  { name: 'その他', starter: false, standard: false, premium: true },
 ];
 
 const recruitPages = [
@@ -25,6 +26,7 @@ const recruitPages = [
   { name: '代表メッセージ', starter: false, standard: true, premium: true },
   { name: 'クロストーク', starter: false, standard: true, premium: true },
   { name: 'エントリーフォーム', starter: true, standard: true, premium: true },
+  { name: 'その他', starter: false, standard: false, premium: true },
 ];
 
 function StatusIcon({ status }: { status: boolean | string }) {
