@@ -7,6 +7,7 @@ import { PageComposition } from "@/components/single/PageComposition";
 import { ProcessAndContent } from "@/components/single/ProcessAndContent";
 import { Maintenance } from "@/components/single/Maintenance";
 import { WhyHighQuality } from "@/components/single/WhyHighQuality";
+import { CaseStudy } from "@/components/single/CaseStudy";
 import { FAQ } from "@/components/single/FAQ";
 import { Contact } from "@/components/single/Contact";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <ProcessAndContent />
       <Maintenance />
       <WhyHighQuality />
+      <CaseStudy />
       <FAQ />
       <Contact />
       
