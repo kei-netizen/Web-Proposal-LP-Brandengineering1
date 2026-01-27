@@ -49,7 +49,7 @@ export function CaseStudy() {
                 <img 
                   src="/attached_assets/スクリーンショット_2026-01-26_14.46.11_1769482065993.png" 
                   alt="Main Visual" 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
               </motion.a>
               <motion.div 
