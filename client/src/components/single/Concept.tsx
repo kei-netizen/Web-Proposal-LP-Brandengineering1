@@ -22,7 +22,7 @@ export function Concept() {
             transition={{ delay: 0.3, duration: 1.2, ease: "easeOut" }}
             className="text-lg md:text-2xl font-bold max-w-4xl leading-relaxed"
           >
-            製造業のポテンシャルを解放する、<br className="hidden md:block" />
+            企業のポテンシャルを解放する、<br className="hidden md:block" />
             次世代のWeb構築サービス「Design Engineering」。
           </motion.p>
         </div>
